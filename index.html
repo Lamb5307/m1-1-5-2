@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 13.0.0.0 for Windows">
+    <link rel="stylesheet" href="style.css">
+<TITLE>制御に関する理論</TITLE>
+</HEAD>
+<BODY>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<h1>【　伝送理論　】</h1>
+
+<p id="buttom"><strong>表示</strong></p><br>
+<p class="di"><b>｢制御｣</b></p>とは、対象となるものを動作させ、目標値に向かってコントロールすることです。<br>
+エレベータや洗濯機、エアコン、駅の自動改札、自動車など様々な場所でコンピュータによる制御が行われています。コンピュータで制御することで、エレベータが安全に動作したり、現在の温度に合わせてエアコンが動いたりします。<br>
+
+
+<strong>(1)制御に種類</strong><br>
+代表的な制御方法には、次のようなものがあります。<br>
+<P><IMG src="1-1-5-2-1.JPG" width="500" border="0"></P>
+
+<strong>(2)制御の仕組み</strong><br>
+コンピュータ制御では、制御対象の光や温度、圧力などの状態を<p class="di"><b>｢センサー｣</b></p>で検出して、コンピュータが処理しやすい機械的な電圧や電流、抵抗などの電気信号に変換します。<br>
+<p class="di"><b>｢アクチュエーター｣</b></p>は、電気信号を受けて機械的な動作に変換し、制御対象を一定の状態に保つなどの制御を行う装置です。<br>
+このとき、コンピュータはリアルアイムOSによって、リアルタイムに処理を完了するための<p class="di"><b>｢応答特性｣</b></p>や、処理を安定して動作させるための<p class="di"><b>｢制御安定性｣</b></p>が必要になります。<br>
+<P><IMG src="1-1-5-2-2.JPG" width="500" border="0"></P>
+
+<strong>(3)センサーの種類</strong><br>
+<p class="di"><b>｢センサー｣</b></p>とは、光や温度、圧力などの変化を検出し計測する機種のことです。センサーは多くの機器の搭載され、エアコンの温度や風量を調整したり、ガスコンロの過熱を防止したりするなどの用途で活用されています。<br>
+代表的なセンサーには、次のようなものがあります。<br>
+<P><IMG src="1-1-5-2-3.JPG" width="500" border="0"></P>
+
+    <script>
+        const buttom = document.getElementById('buttom');
+        const diElements = document.querySelectorAll('.di'); // クラスの要素をすべて取得
+    
+        // マウスホバー時
+        buttom.addEventListener('mouseover', () => {
+            diElements.forEach(di => {
+                di.style.opacity = '1';
+            });
+        }, false);
+    
+        // マウスが離れている時
+        buttom.addEventListener('mouseleave', () => {
+            diElements.forEach(di => {
+                di.style.opacity = '0';
+            });
+        }, false);
+    </script>
+    
